@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   BRAND VARIABLES
+   ========================= */
+:root {
+  --brand-primary: #CA9A36;      /* CTA */
+  --brand-secondary: #CF302E;    /* Headings */
+  --brand-secondary-hover: #b12825;
+  --text-body: #4b5563;          /* gray-600 */
+}
+
+/* =========================
+   BASE TYPOGRAPHY (OVERRIDES TAILWIND)
+   ========================= */
+@layer base {
+  h1 {
+    @apply text-h1 font-bold mb-4;
+    color: var(--brand-secondary);
+  }
+
+  h2 {
+    @apply text-h2 font-bold mt-10 mb-4;
+    color: var(--brand-secondary);
+  }
+
+  h3 {
+    @apply text-h3 font-bold mt-6 mb-3;
+    color: var(--brand-secondary);
+  }
+
+  p {
+    @apply text-body mb-4;
+    color: var(--text-body);
+  }
+
+  ul {
+    @apply list-disc pl-6 mb-4;
+  }
+
+  li {
+    @apply mb-2;
+    color: var(--text-body);
+  }
+
+  a {
+    color: var(--brand-secondary);
+  }
+
+  a:hover {
+    color: var(--brand-secondary-hover);
+  }
+}
+
+/* =========================
+   CTA BUTTON (GLOBAL)
+   ========================= */
+@layer components {
+  .btn-primary {
+  @apply inline-flex items-center justify-center rounded
+         px-7 py-3 text-base font-semibold text-white;
+  background-color: var(--brand-primary);
+}
+}

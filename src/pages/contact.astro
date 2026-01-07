@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+
+<section class="max-w-6xl mx-auto px-4 py-12">
+
+  <h1>Contact Us</h1>
+
+  <p>
+    If you were involved in a car accident in and around Memphis, TN and have questions about injury claims, attorney involvement, or potential resolution options, you may contact us using the form below.
+  </p>
+
+  <p>
+    This service helps connect individuals with attorneys who handle car accident and personal injury claims. Submitting this form does not create an attorney-client relationship.
+  </p>
+
+  <h2>Send a Message</h2>
+
+  <form
+    action="https://formspree.io/f/mwvpgolk"
+    method="POST"
+    class="max-w-xl mt-6"
+  >
+
+    <p class="text-sm mb-4">All fields are required.</p>
+
+    <div class="mb-4">
+      <input type="text" name="name" placeholder="Full Name" required class="w-full border px-4 py-3 rounded" />
+    </div>
+
+    <div class="mb-4">
+      <input type="email" name="email" placeholder="Email Address" required class="w-full border px-4 py-3 rounded" />
+    </div>
+
+    <div class="mb-4">
+      <input type="text" name="subject" placeholder="Subject" required class="w-full border px-4 py-3 rounded" />
+    </div>
+
+    <div class="mb-4">
+      <textarea name="message" placeholder="Message" rows="5" required class="w-full border px-4 py-3 rounded"></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="bg-[#CA9A36] text-white font-semibold px-6 py-3 rounded hover:opacity-90 transition"
+    >
+      Submit Message
+    </button>
+
+  </form>
+
+</section>
+
+</BaseLayout>
